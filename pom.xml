@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>5.2.4</version>
+    <version>5.2.4-SNAPSHOT</version>
 
     <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
@@ -480,7 +479,7 @@
                 <jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
                 <jdbc.url>jdbc:hsqldb:mem:petclinic</jdbc.url>
                 <jdbc.username>sa</jdbc.username>
-                <jdbc.password/>
+                <jdbc.password />
             </properties>
             <dependencies>
                 <dependency>
@@ -529,7 +528,7 @@
                 </dependency>
             </dependencies>
         </profile>
-   </profiles>
+    </profiles>
 
     <repositories>
         <repository>
