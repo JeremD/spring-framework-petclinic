@@ -48,7 +48,7 @@ public class Pet extends NamedEntity {
 
     @Column(name = "birth_date")
     @DateTimeFormat(pattern = "yyyy/MM/dd")
-    private LocalDate birthDate;
+    // private LocalDate birthDate;
 
     @ManyToOne
     @JoinColumn(name = "type_id")
@@ -60,7 +60,6 @@ public class Pet extends NamedEntity {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet", fetch = FetchType.EAGER)
     private Set<Visit> visits;
-
 
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
